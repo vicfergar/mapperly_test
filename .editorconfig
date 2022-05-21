@@ -1,0 +1,38 @@
+# EditorConfig is awesome:http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Don't use tabs for indentation.
+[*]
+indent_style = space
+# (Please don't specify an indent_size here; that has too many unintended consequences.)
+
+# Code files
+[*.{cs,csx,vb,vbx}]
+indent_size = 4
+insert_final_newline = true
+charset = utf-8-bom
+
+# Xml project files
+[*.{csproj,vbproj,vcxproj,vcxproj.filters,proj,projitems,shproj}]
+indent_size = 4
+
+# Xml config files
+[*.{props,targets,ruleset,config,nuspec,resx,vsixmanifest,vsct}]
+indent_size = 2
+
+# JSON files
+[*.json]
+indent_size = 2
+
+# js-like files
+[*.{ts,tsx,js,jsx}]
+max_line_length = 120
+
+[*.{cs,vb}]
+#### Naming styles ####
+
+# Mapperly strict mappings
+dotnet_diagnostic.RMG012.severity = error # Unmapped target property
+#dotnet_diagnostic.RMG020.severity = error # Unmapped source property
